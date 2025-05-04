@@ -9,7 +9,7 @@ import com.opencart.utility.BrowserFactory;
 
 public class HomePage {
 
-   public WebDriver driver;
+	public WebDriver driver;
 
 	@BeforeMethod
 	public void setupConnections() {
@@ -18,12 +18,11 @@ public class HomePage {
 
 	}
 
-	/*
-	 * @AfterMethod public void closeConnecctions() {
-	 * 
-	 * BrowserFactory.quitApplication(driver);
-	 * 
-	 * }
-	 */
+	@AfterMethod
+	public void closeConnecctions() {
+
+		BrowserFactory.quitApplication(driver);
+
+	}
 
 }

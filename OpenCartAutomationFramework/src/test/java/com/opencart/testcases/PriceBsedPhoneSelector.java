@@ -16,8 +16,19 @@ public class PriceBsedPhoneSelector extends HomePage {
 		PhonesPage phenePage = PageFactory.initElements(driver, PhonesPage.class);
 		phenePage.collectPhonePrices();
 		String maxPhonePrice = phenePage.getMaxPhonePrice();
-		WebElement phoneElementByPrice = phenePage.getPhoneElementByPrice(maxPhonePrice);
-		phoneElementByPrice.click();
+		WebElement phoneElementByMaxPrice = phenePage.getPhoneElementByPrice(maxPhonePrice);
+		phoneElementByMaxPrice.click();
+	}
+
+	@Test
+	public void addingLowPricePhoneTocart() throws InterruptedException {
+
+		PhonesPage phenePage1 = PageFactory.initElements(driver, PhonesPage.class);
+		phenePage1.collectPhonePrices();
+		String minPhonePrice = phenePage1.getMinPhonePrice();
+		WebElement phoneElementByMinPrice = phenePage1.getPhoneElementByPrice(minPhonePrice);
+		phoneElementByMinPrice.click();
+
 	}
 
 }
