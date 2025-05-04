@@ -18,11 +18,12 @@ public class HomePage {
 
 	}
 
-	@AfterMethod
-	public void closeConnecctions() {
-
-		BrowserFactory.quitApplication(driver);
-
-	}
+	/*
+	 * @AfterMethod public void closeConnecctions() {
+	 * 
+	 * BrowserFactory.quitApplication(driver);
+	 * 
+	 * }
+	 */
 
 }
