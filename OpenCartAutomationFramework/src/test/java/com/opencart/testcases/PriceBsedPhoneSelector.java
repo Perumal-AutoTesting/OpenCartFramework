@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import com.opencart.page.HomePage;
 import com.opencart.page.PhonesPage;
+import com.opencart.page.StorePage;
 
 public class PriceBsedPhoneSelector extends HomePage {
 
@@ -18,16 +19,20 @@ public class PriceBsedPhoneSelector extends HomePage {
 		String maxPhonePrice = phenePage.getMaxPhonePrice();
 		WebElement phoneElementByMaxPrice = phenePage.getPhoneElementByPrice(maxPhonePrice);
 		phoneElementByMaxPrice.click();
+		StorePage storePage = PageFactory.initElements(driver, StorePage.class);
+		storePage.maxMobilePriceAddCart();
 	}
 
 	@Test
 	public void addingLowPricePhoneTocart() throws InterruptedException {
 
-		PhonesPage phenePage1 = PageFactory.initElements(driver, PhonesPage.class);
-		phenePage1.collectPhonePrices();
-		String minPhonePrice = phenePage1.getMinPhonePrice();
-		WebElement phoneElementByMinPrice = phenePage1.getPhoneElementByPrice(minPhonePrice);
+		PhonesPage phenePage = PageFactory.initElements(driver, PhonesPage.class);
+		phenePage.collectPhonePrices();
+		String minPhonePrice = phenePage.getMinPhonePrice();
+		WebElement phoneElementByMinPrice = phenePage.getPhoneElementByPrice(minPhonePrice);
 		phoneElementByMinPrice.click();
+		StorePage storePage = PageFactory.initElements(driver, StorePage.class);
+		storePage.minMobilePriceAddCart();
 
 	}
 

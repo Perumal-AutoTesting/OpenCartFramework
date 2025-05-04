@@ -26,6 +26,7 @@ public class PhonesPage {
 	@FindBy(xpath = "//div[@class='card-block']//h5")
 	List<WebElement> priceElements;
 
+
 	public void collectPhonePrices() throws InterruptedException {
 
 		Thread.sleep(5000);

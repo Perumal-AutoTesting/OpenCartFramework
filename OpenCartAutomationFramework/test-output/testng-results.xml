@@ -2,27 +2,35 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-04T19:46:05 IST" name="Default suite" finished-at="2025-05-04T19:46:36 IST" duration-ms="31892">
+  <suite started-at="2025-05-04T20:15:54 IST" name="Default suite" finished-at="2025-05-04T20:16:24 IST" duration-ms="29777">
     <groups>
     </groups>
-    <test started-at="2025-05-04T19:46:05 IST" name="Default test" finished-at="2025-05-04T19:46:36 IST" duration-ms="31892">
+    <test started-at="2025-05-04T20:15:54 IST" name="Default test" finished-at="2025-05-04T20:16:24 IST" duration-ms="29777">
       <class name="com.opencart.testcases.PriceBsedPhoneSelector">
-        <test-method is-config="true" signature="setupConnections()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@71a8adcf]" started-at="2025-05-04T19:46:05 IST" name="setupConnections" finished-at="2025-05-04T19:46:17 IST" duration-ms="12533" status="PASS">
+        <test-method is-config="true" signature="setupConnections()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@659499f1]" started-at="2025-05-04T20:15:54 IST" name="setupConnections" finished-at="2025-05-04T20:16:02 IST" duration-ms="7519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupConnections -->
-        <test-method signature="addingHighPricePhoneToCart()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@71a8adcf]" started-at="2025-05-04T19:46:17 IST" name="addingHighPricePhoneToCart" finished-at="2025-05-04T19:46:24 IST" duration-ms="6870" status="PASS">
+        <test-method signature="addingHighPricePhoneToCart()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@659499f1]" started-at="2025-05-04T20:16:02 IST" name="addingHighPricePhoneToCart" finished-at="2025-05-04T20:16:09 IST" duration-ms="7516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingHighPricePhoneToCart -->
-        <test-method is-config="true" signature="setupConnections()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@71a8adcf]" started-at="2025-05-04T19:46:24 IST" name="setupConnections" finished-at="2025-05-04T19:46:30 IST" duration-ms="5404" status="PASS">
+        <test-method is-config="true" signature="closeConnecctions()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@659499f1]" started-at="2025-05-04T20:16:09 IST" name="closeConnecctions" finished-at="2025-05-04T20:16:11 IST" duration-ms="1994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnecctions -->
+        <test-method is-config="true" signature="setupConnections()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@659499f1]" started-at="2025-05-04T20:16:11 IST" name="setupConnections" finished-at="2025-05-04T20:16:16 IST" duration-ms="4777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupConnections -->
-        <test-method signature="addingLowPricePhoneTocart()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@71a8adcf]" started-at="2025-05-04T19:46:30 IST" name="addingLowPricePhoneTocart" finished-at="2025-05-04T19:46:36 IST" duration-ms="6781" status="PASS">
+        <test-method signature="addingLowPricePhoneTocart()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@659499f1]" started-at="2025-05-04T20:16:16 IST" name="addingLowPricePhoneTocart" finished-at="2025-05-04T20:16:23 IST" duration-ms="6990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingLowPricePhoneTocart -->
+        <test-method is-config="true" signature="closeConnecctions()[pri:0, instance:com.opencart.testcases.PriceBsedPhoneSelector@659499f1]" started-at="2025-05-04T20:16:23 IST" name="closeConnecctions" finished-at="2025-05-04T20:16:24 IST" duration-ms="739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnecctions -->
       </class> <!-- com.opencart.testcases.PriceBsedPhoneSelector -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
