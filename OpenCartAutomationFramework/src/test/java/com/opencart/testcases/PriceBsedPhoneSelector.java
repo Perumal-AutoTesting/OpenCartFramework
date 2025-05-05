@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import com.opencart.page.HomePage;
 import com.opencart.page.PhonesPage;
 import com.opencart.page.StorePage;
+import com.opencart.utility.BrowserUtils;
 
 public class PriceBsedPhoneSelector extends HomePage {
 
@@ -21,6 +22,7 @@ public class PriceBsedPhoneSelector extends HomePage {
 		phoneElementByMaxPrice.click();
 		StorePage storePage = PageFactory.initElements(driver, StorePage.class);
 		storePage.maxMobilePriceAddCart();
+		BrowserUtils.handlingAlertPopup(driver);
 	}
 
 	@Test
@@ -33,6 +35,7 @@ public class PriceBsedPhoneSelector extends HomePage {
 		phoneElementByMinPrice.click();
 		StorePage storePage = PageFactory.initElements(driver, StorePage.class);
 		storePage.minMobilePriceAddCart();
+		BrowserUtils.handlingAlertPopup(driver);
 
 	}
 
