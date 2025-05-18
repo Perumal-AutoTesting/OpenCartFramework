@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.opencart.page.HomePage;
 import com.opencart.page.PhonesPage;
 import com.opencart.page.StorePage;
@@ -23,6 +24,7 @@ public class PriceBsedPhoneSelector extends HomePage {
 		StorePage storePage = PageFactory.initElements(driver, StorePage.class);
 		storePage.maxMobilePriceAddCart();
 		BrowserUtils.handlingAlertPopup(driver);
+		ChainTestListener.log("Adding High-price phone to the cart");
 	}
 
 	@Test
@@ -36,6 +38,7 @@ public class PriceBsedPhoneSelector extends HomePage {
 		StorePage storePage = PageFactory.initElements(driver, StorePage.class);
 		storePage.minMobilePriceAddCart();
 		BrowserUtils.handlingAlertPopup(driver);
+		ChainTestListener.log("Adding Low-price phone to the cart");
 
 	}
 

@@ -27,5 +27,7 @@ public class StorePage {
 		addToCart.click();
 
 	}
+	
+	
 
 }
