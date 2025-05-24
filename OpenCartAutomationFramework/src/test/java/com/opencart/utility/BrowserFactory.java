@@ -9,8 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Listeners;
 
 import com.aventstack.chaintest.plugins.ChainTestListener;
+import com.aventstack.chaintest.service.ChainPluginService;
 
-@Listeners(ChainTestListener.class)
 public class BrowserFactory {
 
 	public static WebDriver launchApplication(WebDriver ldriver, String browserName, String appURl) {
