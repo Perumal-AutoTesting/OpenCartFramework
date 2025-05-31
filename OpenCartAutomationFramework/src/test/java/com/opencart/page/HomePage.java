@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.chaintest.plugins.ChainTestListener;
@@ -29,10 +30,12 @@ public class HomePage {
 
 	}
 
+	@Parameters({ "browser", "appurl" })
 	@BeforeMethod
-	public void setupConnections() {
+	public void setupConnections(String browser, String url) {
 
-		this.driver = BrowserFactory.launchApplication(driver, "chrome", "https://www.demoblaze.com/index.html");
+		// https://www.demoblaze.com/index.html
+		this.driver = BrowserFactory.launchApplication(driver, browser, url);
 
 	}
 

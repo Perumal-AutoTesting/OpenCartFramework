@@ -48,6 +48,11 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>XML/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+
+					<systemPropertyVariables>
+						<executionBrowser>${browser}</executionBrowser>
+						<testURl>${appurl}</testURl>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
